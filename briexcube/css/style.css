@@ -18,7 +18,7 @@
   --outline-light: 1px solid var(--light);
   --transition: .5s;
   --paragraph: .8em;
-  --container-padding: 20px 8vw;
+  --container-padding: 20px 12vw;
 }
 
 
@@ -231,7 +231,7 @@ main {
 }
 
 .card .featured-image {
-  max-width: 30vw;
+  max-width: 26vw;
   background-color: black;
   object-fit: contain;
   object-position: center;

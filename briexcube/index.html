@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IDCamp Submission | Dasar Pemrograman Web</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header id="landing">
+    <nav class="navbar">
+      <div class="navbar-nav">
+        <a href="/" class="logo"><img src="images/3x3.png" alt="cube logo"></a>
+        <a href="/" class="text-logo">BriexCube</a>
+        <button type="button" class="navbar-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="navbar-collapse">
+        <a href="#cfop" class="nav-link">CFOP</a>
+        <a href="#roux" class="nav-link">ROUX</a>
+        <a href="#zz" class="nav-link">ZZ</a>
+      </div>
+    </nav>
+    
+    <div class="jumbotron-container">
+      <div class="jumbotron">
+        <h1>How to solve a 3x3 rubik's cube</h1>
+        <button type="button" class="btn btn-outline" onclick="window.location='#cfop';">Learn</button>
+      </div>
+      <img src="images/jumbotron.jpeg" class="jumbotron-image" alt="Magic Cube">
+    </div>
+  </header>
+
+  <div class="alert">
+    <div id="loadCounter"></div>
+    <button type="button" class="alert-close">&times;</button>
+  </div>
+
+  <main>
+    <div id="content">
+      <article class="card">
+        <img src="images/cfop.jpeg" class="featured-image" alt="cfop" />
+        <section>
+          <a href="#"><h2 id="cfop">CFOP Method</h2></a>
+          <p>
+            The CFOP method (Cross – F2L – OLL – PLL), sometimes known as the Fridrich method, is one of the most commonly used methods in speedsolving a 3×3×3 Rubik's Cube. This method was first developed in the early 1980s combining innovations by a number of speed cubers.
+          </p>
+          <a href="#" class="btn btn-primary">Readmore...</a>
+        </section>
+      </article>
+
+      <article class="card">
+        <img src="images/roux.jpeg" class="featured-image" alt="roux">
+        <section>
+          <a href="#"><h2 id="roux">ROUX Method</h2></a>
+          <p>
+            Roux is a Rubik's cube speedsolving method invented by Gilles Roux. Roux is based on Blockbuilding and Corners First methods. It is notable for its low movecount, lack of rotations, heavy use of M moves in the last step, and adaptability to One-Handed Solving.
+          </p>
+          <a href="#" class="btn btn-primary">Readmore...</a>
+        </section>
+      </article>
+
+      <article class="card">
+        <img src="images/zz.jpeg" class="featured-image" alt="zz">
+        <section>
+          <a href="#"><h2 id="zz">ZZ Method</h2></a>
+          <p>
+            The ZZ method (short for "Zbigniew Zborowski") is a modern speedcubing method originally proposed by Zbigniew Zborowski in 2006. The method was designed specifically to achieve high turning speed by focusing on move ergonomics, and is the combination of a block-building method and a layer-by-layer method.
+          </p>
+          <a href="#" class="btn btn-primary">Readmore...</a>
+        </section>
+      </article>
+    </div>
+
+    <aside>
+      <article class="profile card">
+        <header>
+          <h2>About Me</h2>
+          <figure>
+            <img src="images/profile.jpg" class="avatar" alt="Gede Putra Arjawa">
+            <figcaption>Gede Putra Arjawa</figcaption>
+          </figure>
+        </header>
+        <section>
+          <div class="flex-container-column">
+            <div class="flex-container-row">
+              <span>Github</span>
+              <span>:</span>
+              <span><a href="https://github.com/arjawa">arjawa</a></span>
+            </div>
+            <div class="flex-container-row">
+              <span>Instagram</span>
+              <span>:</span>
+              <span><a href="https://www.instagram.com/vnexeirb/">vnexeirb</a></span>
+            </div>
+            <div class="flex-container-row">
+              <span>Website</span>
+              <span>:</span>
+              <span><a href="https://arjawa.tk">arjawa.tk</a></span>
+            </div>
+          </div>
+        </section>
+      </article>
+    </aside>
+  </main>
+
+  <footer>
+    <span>&copy; 2022 | Arjawa a.k.a briexenv</span>
+  </footer>
+
+  <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

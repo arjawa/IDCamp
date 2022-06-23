@@ -18,6 +18,7 @@
   --outline-light: 1px solid var(--light);
   --transition: .5s;
   --paragraph: .8em;
+  --container-padding: 20px 8vw;
 }
 
 
@@ -111,7 +112,7 @@ h2, h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 80px;
+  padding: var(--container-padding);
   background: var(--dark);
 }
 
@@ -175,7 +176,7 @@ h2, h3 {
 
 .jumbotron h1 {
   margin-bottom: 20px;
-  padding: 0 80px;
+  padding: var(--container-padding);
   font-size: 2em;
   font-weight: 700;
   text-transform: capitalize;
@@ -192,7 +193,7 @@ h2, h3 {
 */
 main {
   display: flex;
-  padding: 20px 80px;
+  padding: var(--container-padding);
   gap: 20px;
 }
 

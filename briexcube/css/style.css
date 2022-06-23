@@ -14,6 +14,8 @@
   --shadow: rgb(0, 144, 255, 0.2);
   --rounded: 5px;
   --rounded-xl: 20px;
+  --outline-dark: 1px solid var(--dark);
+  --outline-light: 1px solid var(--light);
   --transition: .5s;
   --paragraph: .8em;
 }
@@ -59,7 +61,7 @@ h2, h3 {
 
 .btn-outline {
   background: transparent;
-  border: 1px solid var(--light);
+  border: var(--outline-light);
   color: var(--light);
 }
 
@@ -71,15 +73,15 @@ h2, h3 {
 .btn-outline:hover {
   background: var(--light);
   color: var(--primary);
-  outline: 1px solid var(--light);
+  outline: var(--outline-light);
   outline-offset: 2px;
 }
 
 .btn-primary:hover {
   background: var(--light);
   color: var(--dark);
-  outline: 1px solid var(--dark);
-  border: 1px solid var(--dark);
+  outline: var(--outline-dark);
+  border: var(--outline-dark);
   outline-offset: 2px;
 }
 
@@ -168,6 +170,7 @@ h2, h3 {
   justify-content: center;
   text-align: center;
   color: var(--light);
+  width: 50%;
 }
 
 .jumbotron h1 {
@@ -227,7 +230,7 @@ main {
 }
 
 .card .featured-image {
-  max-width: 300px;
+  max-width: 30vw;
   background-color: black;
   object-fit: contain;
   object-position: center;
@@ -268,6 +271,7 @@ main {
   animation-name: pulse;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  outline: var(--outline-light);
 }
 
 .card.row-reverse .featured-image {
@@ -400,12 +404,15 @@ footer span {
 * Counter
 */
 .alert {
-  position: relative;
+  position: fixed;
+  top: 100px;
+  right: 0;
   padding: 10px 20px;
   background-color: var(--primary);
-  opacity: .6;
+  opacity: .8;
   margin: 20px 80px 0 80px;
   border-radius: var(--rounded);
+  outline: var(--outline-light);
 }
 
 #loadCounter span {
@@ -459,7 +466,7 @@ footer span {
     display: flex;
     flex-direction: column;
     transition: var(--transition);
-    outline: 2px solid black;
+    outline: var(--outline-dark);
     padding: 0;
     width: 100%;
   }
@@ -514,9 +521,12 @@ footer span {
   .jumbotron-container {
     flex-direction: column;
   }
+
   .jumbotron {
-    height: 300px;
+    padding: 100px 0;
+    width: 100%;
   }
+
   .jumbotron-image {
     width: 100%;
     border-radius: 30px 0 0 0;
@@ -539,6 +549,7 @@ footer span {
   }
 
   .alert {
+    top: 50px;
     margin: 20px 20px 0 20px;
   }
 }

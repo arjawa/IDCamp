@@ -25,14 +25,18 @@ window.onload = () => {
   // Browser mendukung sessionStorage/localStorage.
   let savedCount = Number(localStorage.getItem("loadCount"));
     if (savedCount && savedCount >= 1 ) {
-      loadCounter.innerHTML = `<span>This page is loaded ${savedCount + 1} times on your browser.</span>`;
+      loadCounter.innerHTML = `<span>This page has been loaded ${savedCount + 1} times.</span>`;
       localStorage.loadCount = savedCount + 1;
     } else {
-      loadCounter.innerHTML = "<span>This page is successfully loaded on your browser.</span>";
+      document.querySelector(".alert").style.display = "none";
       localStorage.loadCount = 1;
     }
   } else {
     // Browser tidak mendukung sessionStorage/LocalStorage
-    alert("Please consider to use another browser.")
+    alert("Please consider to use another browser.");
   }
-}
+  
+  setTimeout(() => {
+    document.querySelector(".alert").style.display = "none";
+  }, 5000);
+};
